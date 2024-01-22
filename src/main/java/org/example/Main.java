@@ -4,15 +4,23 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {
-            if (i % 3 == 0) {
-                System.out.print("Fizz");
-            }
-            if(i % 5 == 0){
-                System.out.print("Buzz");
-            }
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
 
-            System.out.println("i = " + i);
+        for (int i = 1; i <= 100; i++) {
+            if (i % 15 == 0) {
+                System.out.println("FizzBuzz ");
+            }
+            else if (i % 3 == 0) {
+                System.out.println("Fizz ");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("Buzz ");
+            }
+            else {
+                System.out.println(i + " ");
+            }
         }
     }
 }
